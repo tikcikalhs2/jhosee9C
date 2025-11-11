@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog - NEOBORNN</title>
+  <style>
+    /* === RESET & DASAR === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "ARMY RUST", Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      text-align: center;
+    }
+
+    /* === MENU / NAVBAR === */
+    nav {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff0000;
+      color: white;
+    }
+
+    /* === JUDUL === */
+    .hero {
+      font-size: 50px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    /* === BANNER === */
+    .banner img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    /* === BAGIAN KATEGORI === */
+    .kategori {
+      background-color: #ff3300;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 20px auto;
+    }
+
+    /* === GRID PRODUK === */
+    .produk-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .produk {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      width: 270px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .produk:hover {
+      transform: translateY(-5px);
+    }
+
+    .produk img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .produk h3 {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    .produk p {
+      font-size: 20px;
+      color: #ff0000;
+      font-weight: bold;
+      margin: 8px 0 15px 0;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 600px) {
+      nav ul {
+        gap: 20px;
+      }
+      .hero {
+        font-size: 36px;
+      }
+      .produk {
+        width: 90%;
+      }
+    }
+  .produk1 {      border: 1px solid #ccc;
+      border-radius: 15px;
+      width: 270px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+}
+  .produk2 {      border: 1px solid #ccc;
+      border-radius: 15px;
+      width: 270px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+}
+  .produk3 {      border: 1px solid #ccc;
+      border-radius: 15px;
+      width: 270px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- ==== MENU ==== -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Halaman Utama</a></li>
+      <li><a href="SHOOPING GUIDE (2).html">SHOPPING GUIDE</a></li>
+      <li><a href="CATALOG.html">CATALOG</a></li>
+      <li><a href="profile.html">PROFIL</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==== JUDUL ==== -->
+  <div class="hero">NEOBORNN!</div>
+
+  <!-- ==== BANNER ==== -->
+  <div class="banner"><img src="img/Specs_Sport_Apparell.jpg" width="744" height="389"></div>
+
+  <!-- ==== KNEE PAD ==== -->
+  <div class="kategori">KNEE PAD!</div>
+
+  <div class="produk-grid">
+    <div class="produk"><img src="img/83799395-2941-4197-a313-3ca93849e3e1.jpg" width="700" height="700">
+      <h3>Asics</h3>
+      <p>RP.100.000</p>
+    </div>
+
+    <div class="produk"><img src="img/516357_1f43f865-079e-40c2-bd84-5cc9cd10b574.jpg" width="600" height="600">
+      <h3>Nike</h3>
+      <p>RP.250.000</p>
+    </div>
+
+    <div class="produk"><img src="img/ortus_forte_kneepad_black_.jpg" width="600" height="600">
+      <h3>Ortuseight</h3>
+      <p>RP.390.000</p>
+    </div>
+
+    <div class="produk"><img src="img/mizuno_vs1_knee_pad_-_black_1.jpg" width="480" height="480">
+      <h3>Mizuno</h3>
+      <p>RP.500.000</p>
+    </div>
+  </div>
+
+  <!-- ==== BOLA SPECS ==== -->
+  <div class="kategori" style="background-color:#ffffff; color:#000;">BOLA SPECS!</div>
+
+  <div class="produk-grid">
+    <div class="produk"><img src="img/images (1).jpg" width="225" height="225">
+      <h3>Bola Specs</h3>
+      <p>RP.150.000</p>
+    </div>
+
+    <div class="produk"><img src="img/specs_palapa_23_fb_competition_ball_-_plasma_redbluefish_5_1_1.jpg" width="480" height="480">
+      <h3>Specs Palapa 23</h3>
+      <p>RP.200.000</p>
+    </div>
+
+    <div class="produk"><img src="img/specs_palapa_24_fb_fifa_offical_match_ball_liga_1_playoff_se_05_1.jpg" width="600" height="600">
+      <h3>Specs Palapa 24</h3>
+      <p>RP.390.000</p>
+    </div>
+
+    <div class="produk"><img src="img/1660203870.jpg" width="600" height="600">
+      <h3>Bola Specs Pro</h3>
+      <p>RP.400.000</p>
+    </div>
+  </div>
+
+</body>
+</html>

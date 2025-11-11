@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Utama - NEOBORNN</title>
+  <style>
+    /* ==== RESET DASAR ==== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "ARMY RUST", Arial, sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      text-align: center;
+    }
+
+    /* ==== MENU / NAVIGATION ==== */
+    nav {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      padding: 15px 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 24px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      padding: 8px 15px;
+      border-radius: 10px;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff0000;
+      color: #fff;
+    }
+
+    /* ==== JUDUL ==== */
+    .hero {
+      font-size: 50px;
+      margin: 30px 0 10px 0;
+      font-weight: bold;
+    }
+
+    /* ==== GAMBAR BANNER ==== */
+    .banner img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* ==== TEKS PROMO BERJALAN ==== */
+    .promo {
+      background-color: #ff3300;
+      color: #fff;
+      padding: 10px 0;
+      overflow: hidden;
+      position: relative;
+      font-size: 22px;
+    }
+
+    .promo span {
+      display: inline-block;
+      white-space: nowrap;
+      animation: slide 12s linear infinite;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* ==== GRID PRODUK ==== */
+    .produk-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 30px 15px;
+    }
+
+    .produk {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      width: 270px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .produk:hover {
+      transform: translateY(-5px);
+    }
+
+    .produk img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .produk h3 {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    .produk p {
+      color: #ff0000;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 8px 0 15px 0;
+    }
+
+    /* ==== RESPONSIVE ==== */
+    @media (max-width: 600px) {
+      nav ul {
+        gap: 20px;
+      }
+      .hero {
+        font-size: 36px;
+      }
+      .produk {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==== MENU ==== -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Halaman Utama</a></li>
+      <li><a href="SHOOPING GUIDE (2).html">SHOPPING GUIDE</a></li>
+      <li><a href="CATALOG.html">CATALOG</a></li>
+      <li><a href="profile.html">PROFIL</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==== JUDUL ==== -->
+  <div class="hero">
+    <p>NEOBORNN!</p>
+    <p><img src="img/Specs_Sport_Apparell.jpg" width="744" height="389"></p>
+  </div>
+
+  <!-- ==== GAMBAR BANNER ==== -->
+  <div class="banner"></div>
+
+  <!-- ==== TEKS PROMO ==== -->
+  <div class="promo">
+    <span>?? Best Seller - BELI 2 GRATIS ONGKIR DAN DAPAT DISKON ??</span>
+  </div>
+
+  <!-- ==== PRODUK BARIS 1 ==== -->
+  <div class="produk-grid">
+    <div class="produk">
+      <img src="img/specs_lightspeed_reborn_in_-_blackpale_gold_1 (1).jpg" alt="">
+      <h3><a href="lightspeed black pale - detail.html">Lightspeed Reborn Black</a></h3>
+      <p>RP.599.800</p>
+    </div>
+    <div class="produk">
+      <img src="img/id-11134207-7rasl-m5kujovqanb661 (1).jpg" alt="">
+      <h3><a href="detail galctica biru.html">Galactica Morph In</a></h3>
+      <p>RP.509.000</p>
+    </div>
+    <div class="produk">
+      <img src="img/lg_6475d3b034b61.png" alt="">
+      <h3><a href="detail valhalla.html">Lightspeed Reborn Valhalla</a></h3>
+      <p>RP.699.000</p>
+    </div>
+    <div class="produk">
+      <img src="img/specs_speedblaze_4_in_-_lightest_skywhitegoblin_blue_-1.jpg" alt="">
+      <h3><a href="detail speedblaze.html">Speedblaze V4</a></h3>
+      <p>RP.450.000</p>
+    </div>
+  </div>
+
+  <!-- ==== PRODUK BARIS 2 ==== -->
+  <div class="produk-grid">
+    <div class="produk">
+      <img src="img/specs_galactica_morph_in_-_grim_reapermagnifico_1.jpg" alt="">
+      <h3><a href="detail galactica ungu.html">Galactica Morph In</a></h3>
+      <p>RP.599.800</p>
+    </div>
+    <div class="produk">
+      <img src="img/1-65.jpg" alt="">
+      <h3>Lightspeed Reborn Dazzling Blue</h3>
+      <p>RP.600.000</p>
+    </div>
+    <div class="produk"><img src="img/1-81.jpg" width="1000" height="1000">
+      <h3>Lightspeed Reborn White Pale</h3>
+      <p>RP.610.000</p>
+    </div>
+    <div class="produk"><img src="img/specs_lightspeed_reborn_in_-_safety_yellowcrescent_green_1.jpg" width="600" height="600">
+      <h3>Lightspeed Reborn Yellow</h3>
+      <p>RP.599.990</p>
+    </div>
+  </div>
+
+</body>
+</html>
